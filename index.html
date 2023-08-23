@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tanks Protoptype</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container- mt-0">
+    <div class="mt-0 p-5 kys text-white">
+      <h1>Prototypes of Tanks (Cold war - Modern Era)</h1>
+
+    </div>
+  </div>
+
+
+
+  <nav class="navbar navbar-expand-sm  fomo">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Frontpage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./public/soviet_union.html">Soviet Union</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/germany.html">Germany</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/britain.html">Britain</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/united_states.html">United States</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/china.html">China</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/japan.html">Japan</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="m-5 jfk">
+    <h2>Tanks play an important role in warfare, such as frontline breakthough ,and morale boosting.</h2>
+    <p>Tanks are designed to kill, but what happened to the ones that never left the table?, and why did they failed?
+    </p>
+    <p>Join me, as we travel through time, unreveal failed projects throughout history.. In, "Cursed by Design"</p>
+
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./image/thebegelit.png" style="width:100%">
+      <div class="text">The West German Bundeswehr "BegeiltPanzer 57" Prototype in 1977, only one were fully built.
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./image/newth301.png" style="width:100%">
+      <div class="text">West German Bundeswehr "TH301", A better and export version of the TAM.</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./image/is7.jpg" style="width:100%">
+      <div class="text" style="color: yellow;">The monostrous Russian Heavy tank, the Iosif Stalin 7, or the Object 260
+      </div>
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+  <div class="m-5">
+
+    <h2>Main Battle Tank (MBT)</h2>
+    <p>A MBT is a heavily armored and powerful military vehicle designed for frontline combat. Its primary roles include
+      engaging enemy armored and fortified positions, providing cover for infantry platoons, and maintaining control of
+      the battlefield through firepower and mobility. MBTs serve as a crucial component of modern ground forces, and a
+      show of the countries' military might and capabilities.</p>
+    <h2>Tank destroyers, Self-Propelled guns, ATGM carriers.</h2>
+    <p>Tank destroyers is a specialized armored vehicle designed primarily for engaging and destroying enemy armor and
+      tanks. Its role is to provide anti-tank firepower support to infantry units. Self propelled guns usually are
+      mobile artillery piece strapped to an already existing tank chassis to create a mobile artillery, on the other
+      hand, mounting anti-air pieces onto a tank chassis will direct it role to become a SPAAG. ATGM carriers usually
+      carry not less than 2 anti-tank guided missiles specifically mounted to hunt tanks at long range with pin-point
+      precision.</p>
+    <h2>Light tanks</h2>
+    <p>Light tank's speed and agility are key role in modern warfare. It's great for reconnaissance, quick responses to
+      threat, and exploiting enemy weaknesses. It's mobility and firepower are ideal components for hit-n-run tactics on
+      the battlefields.</p>
+    <h2>Heavy tanks</h2>
+    <p>Simple. Big armor, big gun, big crew, big boom.</p>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <div class="container- mt-0">
+    <div class="mt-0 p-2 kys text-white">
+      <h1>Future apologises from the misinformation if you encounter any.</h1>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
