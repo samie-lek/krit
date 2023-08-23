@@ -6,13 +6,20 @@
 
 .is7 {
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
-.is7 > img {
+.is7 > .image {
+    display: flex;
+    justify-content: center;
     grid-column: span 2;
+    width: 100%;
+}
+
+.is7 > .image > img {
+    width: 80%;
 }
 
 .is7 > h2 {
@@ -34,6 +41,11 @@
 
     p {
         font-size: 18px;
+    }
+
+    .is7 > .image > img {
+        margin: 0px;
+        width: 100%;
     }
 }
 
